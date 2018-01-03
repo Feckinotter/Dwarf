@@ -1058,6 +1058,7 @@ input[type="submit"], button, a[accesskey="r"], #attach_files_link {
 #content > #list-top,
 #content .mypage-box,
 #content > #history > .journal,
+#content > #issue-changesets > .changeset,
 #content > .tab-content > form .box {
   width: 100%;
   background: #fff;
@@ -1347,7 +1348,8 @@ div.issue .subject h3 {
 .next-prev-links.contextual {
   padding: 0; }
 
-.controller-issues #content #history > h3 {
+.controller-issues #content #history > h3,
+.controller-issues #content #issue-changesets > h3 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1358,7 +1360,7 @@ body #content p.author {
   font-size: 0.8rem; }
 
 .controller-issues #content .issue.details {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-right: 1%;
   background: transparent;
@@ -1441,6 +1443,12 @@ body #content p.author {
 .controller-issues #content #history {
   width: 49%;
   float: left; }
+
+.controller-issues #content #issue-changesets {
+    all: initial;
+    width: 49%;
+    float: right;
+}
 
 .controller-issues #content #history > *:nth-child(2) {
   margin-top: 0; }
