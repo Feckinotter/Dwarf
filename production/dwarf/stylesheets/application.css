@@ -3096,4 +3096,9 @@ table.progress {
     right:initial;
 }
 
+/* Remove padding for the contextual menu when in the wiki as it overlaps the wiki content otherwise */
+body.controller-wiki #content > .contextual {
+    padding:0em;
+}
+
 /*# sourceMappingURL=application.css.map */
