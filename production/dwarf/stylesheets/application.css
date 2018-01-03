@@ -3077,4 +3077,19 @@ table.progress {
     width: 70px;
 }
 
+/* Avoid breaking words in links on the wiki */
+.wiki a {
+    word-break: break-word;
+}
+
+/* Update the project page to automatically decide the width of the columns
+    leaving a value in here causes lots of lost screen estate especially when the columns are restricted
+    to two anyway.
+*/
+#projects-index {
+    column-width:auto;
+    -webkit-column-width:auto;
+    -moz-column-width:auto;
+}
+
 /*# sourceMappingURL=application.css.map */
