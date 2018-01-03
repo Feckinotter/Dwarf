@@ -3092,4 +3092,8 @@ table.progress {
     -moz-column-width:auto;
 }
 
+.drdn-content {
+    right:initial;
+}
+
 /*# sourceMappingURL=application.css.map */
