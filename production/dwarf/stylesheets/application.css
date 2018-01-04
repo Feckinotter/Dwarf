@@ -3101,4 +3101,19 @@ body.controller-wiki #content > .contextual {
     padding:0em;
 }
 
+/* Wiki h1, h2 and h3 titles appear to have size discrepancies due to differences between the typography and application css being applied at levels h2 and lower, restate all the
+    values here.
+*/
+.wiki h1 {
+    font-size:1.5rem;
+}
+
+.wiki h2 {
+    font-size:1.25rem;
+}
+
+.wiki h3 {
+    font-size:1.1rem;
+}
+
 /*# sourceMappingURL=application.css.map */
