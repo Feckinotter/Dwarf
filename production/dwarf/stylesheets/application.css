@@ -3119,7 +3119,8 @@ body.controller-wiki #content > .contextual {
 /* Fix issue subjects are unusually large in size and text size */
 .controller-issues input#issue_subject {
     height: initial;
-    font-size: 100%;
+    font-size: 120%;
+    padding: 3px 10px;
 }
 
 /*# sourceMappingURL=application.css.map */
