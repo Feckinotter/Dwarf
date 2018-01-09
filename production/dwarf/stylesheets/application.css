@@ -2212,7 +2212,7 @@ body #content .nodata {
     font-size: 16px; }
 
   #sidebar, #content {
-    width: 100%;
+    width: 100% !important;
     clear: both;
     float: none;
     padding: 20px;
@@ -2249,7 +2249,7 @@ body #content .nodata {
     margin: 0; }
 
   #content {
-    width: 60%;
+    width: 60% !important;
     padding: 20px;
     margin: 0; } }
 @media (max-width: 991px) {
@@ -2372,7 +2372,7 @@ body #content .nodata {
     margin: 0; }
 
   #content {
-    width: 70%;
+    width: 70% !important;
     padding: 20px;
     margin: 0; }
     #content .issue .attributes th {
@@ -2510,7 +2510,7 @@ body #content .nodata {
     width: 21%; }
 
   #content {
-    width: 79%;
+    width: 79% !important;
     float: left; }
 
   .bgr::after {
@@ -3082,23 +3082,22 @@ table.progress {
     word-break: break-word;
 }
 
-/* Update the project page to automatically decide the width of the columns
-    leaving a value in here causes lots of lost screen estate especially when the columns are restricted
-    to two anyway.
+/* Prevent fighting between the wiki and responsive stylesheets causing the sidebar to force the wiki content down on smaller screen sizes 
+    and attempt to make the styling of the white padded background consistent
 */
-#projects-index {
-    column-width:auto;
-    -webkit-column-width:auto;
-    -moz-column-width:auto;
+.controller-wiki.action-show #content {
+    background-color: unset;
+    margin: unset;
 }
 
-.drdn-content {
-    right:initial;
+body.controller-wiki #content > .wiki-page {
+    background-color: #fff;
+    padding: 1.2rem;
 }
 
-/* Remove padding for the contextual menu when in the wiki as it overlaps the wiki content otherwise */
+/* Reduce padding for the contextual menu when in the wiki as it overlaps the wiki content otherwise */
 body.controller-wiki #content > .contextual {
-    padding:0em;
+    padding:1em;
 }
 
 /* Wiki h1, h2 and h3 titles appear to have size discrepancies due to differences between the typography and application css being applied at levels h2 and lower, restate all the
@@ -3114,6 +3113,20 @@ body.controller-wiki #content > .contextual {
 
 .wiki h3 {
     font-size:1.1rem;
+}
+
+/* Update the project page to automatically decide the width of the columns
+    leaving a value in here causes lots of lost screen estate especially when the columns are restricted
+    to two anyway.
+*/
+#projects-index {
+    column-width:auto;
+    -webkit-column-width:auto;
+    -moz-column-width:auto;
+}
+
+.drdn-content {
+    right:initial;
 }
 
 /* Fix issue subjects are unusually large in size and text size */
