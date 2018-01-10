@@ -1107,7 +1107,7 @@ input[type="submit"], button, a[accesskey="r"], #attach_files_link {
   padding-top: 0; }
 
 #main.nosidebar #content {
-  width: 100%; }
+  width: 100% !important; }
 
 select[multiple="multiple"] {
   min-height: 200px; }
